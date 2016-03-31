@@ -7,9 +7,9 @@ goto :eof
 :mainscript
   setlocal
 
-  set metaURL=http://mmeta.com
-  set clURL=http://mmcl.com
-  set hexURL=http://hexolve-dev.com
+  set metaURL=http://mmeta.dev
+  set clURL=http://mmcl.dev
+  set hexURL=http://hexolve.dev
 
   call :checkmmeta
   call :checkmmcl
