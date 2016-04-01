@@ -7,5 +7,5 @@ if "%~1"=="react" (
   foundation new
 )
 
-cd %~2
-atom .
+cd "%~2"
+atom . && cd "%~2" && npm install && bower install
