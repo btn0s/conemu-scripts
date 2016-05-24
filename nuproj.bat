@@ -1,11 +1,11 @@
 @echo off
 setlocal
 
-if "%~1"=="react" (
-  git clone https://github.com/btn0s/nuproj-react.git %~2
-) else (
+if "%~1"=="-old" (
   foundation new
-)
+) else (
+  git clone https://github.com/btn0s/bn-web-starter-kit.git %~1
 
-cd "%~2"
-atom . && cd "%~2" && npm install && bower install
+  cd "%~1"
+  atom . && cd "%~1" && npm install && bower install
+)
